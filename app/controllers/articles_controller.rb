@@ -8,8 +8,6 @@ class ArticlesController < ApplicationController
 	def show
 	end
 
-private
-
 	def new
 	end
 

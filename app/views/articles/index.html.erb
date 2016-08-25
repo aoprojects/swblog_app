@@ -1,12 +1,25 @@
-<% @articles.each do |a| %>
+<div class="container <%= controller_name%>_<%= action_name %>">
 
-	<% link_to a %>
+		<div class="row">
+		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
+			<main class="col-md-8 col-sm-12">
+				<!-- blog articles will go in this section -->
+				
+				<% @articles.each do |a| %>
+					<h2><%= a.title %></h2>
+					<p class="align-right small"><%= a.date %></p>
+					<section>
+						<%= a.body_text.html_safe %>
+					</section>
+					<hr>
+				<% end %>
 
-		<h2><%= a.title %></h2>
-	
-		TODO Each article, make a link to each title and date and beginning of articles, truncated.
 
-	<% end %><!-- end link to each article -->
+			</main><!-- end blog article content area, col-md-8 -->
+			<div class="col-md-4 col-sm-12">
+				
+				<%= render "layouts/aside" %>
 
-<% end %><!-- end articles ruby block -->
-
+			</div><!-- end col-md-4 for all asides-->
+		</div><!-- end main page row div -->
+	</div><!-- end container -->

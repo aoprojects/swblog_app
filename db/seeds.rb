@@ -51,3 +51,5 @@ Job.create(title: "Executive Assistant", location: "Rancho Palos Verdes, Los Ang
 <p>
     We promise to acknowledge every inquiry with a personal response, because we have no robots currently working in HR.
 </p>")
+
+Article.create(title: "Why a Green Business Still Prints Paper Fliers", date: "August 2016", body_text: "<p>TODO</p>")
