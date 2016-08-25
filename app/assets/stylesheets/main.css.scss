@@ -1,0 +1,72 @@
+
+/*
+Project by Alison Ostendorf
+team@virgoventures.org
+Project name: Socialwise Partners Inc. Company Blog
+*/
+
+
+$green: #228E50;
+$brown: #86765F;
+$btn-success-bg: #228E50;
+$dropdown-link-active-color: #86765F;
+
+
+aside section {
+	border-bottom: 1px solid $green;
+	margin: 15px;
+	padding: 20px;
+}
+
+h2, a {
+	color: $green;
+}
+
+a:hover {
+	color: darken($green, 15%);
+	text-decoration: none;
+	transition: 0.1s ease-in;
+	font-weight: bold;
+}
+.btn-success {
+	background-color: $green;
+}
+
+
+button a {
+	color: white !important;
+}
+
+footer p {
+	color: $brown;
+}
+
+footer p i {
+	font-size: 35px;
+	margin: 5px;
+}
+
+.footer-leaf {
+	height: 35px;
+	margin: 6px;
+}
+
+.logo-navbar {
+	max-height: 40px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+nav a {
+	color: $green;
+}
+
+.pages_home, .pages_story_of_sw {
+	margin-top: 30px;
+}
+
+#social-media-container i {
+	font-size: 25px;
+	padding: 5px;
+}

@@ -1,0 +1,17 @@
+<div class="container <%= controller_name%>_<%= action_name %>">
+
+		<div class="row">
+		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
+			<main class="col-md-8 col-sm-12">
+				<!-- blog articles will go in this section -->
+				
+				<%= render "layouts/articles" %>
+
+			</main><!-- end blog article content area, col-md-8 -->
+			<div class="col-md-4 col-sm-12">
+				
+				<%= render "layouts/aside" %>
+
+			</div><!-- end col-md-4 for all asides-->
+		</div><!-- end main page row div -->
+	</div><!-- end container -->

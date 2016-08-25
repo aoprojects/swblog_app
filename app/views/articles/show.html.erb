@@ -1,0 +1,11 @@
+each blog article will display with this layout
+
+<% @article do |a| %>
+
+	<h2><%= a.title %></h2>
+
+	<%= a.date %>
+
+	<%= a.body_text %>
+
+<% end %>

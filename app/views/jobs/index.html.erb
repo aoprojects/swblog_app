@@ -1,0 +1,21 @@
+<section id="careers-container" class="container"> 
+	<h1>We are expanding! See job openings with Socialwise below.</h1>
+
+	
+	<% @jobs.each do |job| %>
+
+		<h2>Position: <%= job.title %></h2>
+
+		<h3>Location: <%= job.location %></h3>
+
+		<span>Description: <%= job.description %></span>
+
+		<button>Apply #</button>
+		<hr>
+
+	<% end %>
+
+
+</section>
+
+

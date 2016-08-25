@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socialwise Blog</title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- TODO tracking code for Agile CRM -->
+<!-- TODO tracking code for google analytics -->
+	<%= render 'layouts/nav' %>
+		
+	<%= yield %>
+
+	<%= render 'layouts/footer' %>
+
+<!-- 
+TODO before launch
+fix printer layout styling
+add newseltter sign up code agile - should be a modal
+agile crm analytics
+google analytics
+make footer social media icons larger
+third column of footer content
+keyword research for articles
+each article has its own page, which means each is part of a database
+social media poll question input method from customers
+write the story of socialwise and put that in the upper nav links
+drop down nav links - confirm working
+add tagline somewhere near the nav and in the footer
+summary of articles section
+independent scroll of the article and of the aside section
+green button success color
+ -->
+
+</body>
+</html>
