@@ -25,9 +25,11 @@
 	<section id="articles-summary">
 		<h4>Summary of articles</h4>
 		<ul>
-			<li>Why a Green Business Still Prints Paper Fliers</li>
-			<li>Article #2 TODO</li>
+			<% @articles.each do |a| %>
+				<li><%= link_to a.title, article_path(a) %></li>
+			<% end %>
 		</ul>
+
 
 	</section>
 	<section id="why-is-socialwise-different">
