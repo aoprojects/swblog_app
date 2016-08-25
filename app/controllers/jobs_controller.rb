@@ -1,6 +1,6 @@
-class ArticlesController < ApplicationController
+class JobsController < ApplicationController
 
-private
+
 	def index
 		@jobs = Job.all
 	end
