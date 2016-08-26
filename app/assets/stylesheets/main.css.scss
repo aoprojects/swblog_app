@@ -11,6 +11,12 @@ $brown: #86765F;
 $btn-success-bg: #228E50;
 $dropdown-link-active-color: #86765F;
 
+.articles_index {
+	h3 {
+		text-align: center;
+		color: $brown;
+	}
+}
 
 aside section {
 	border-bottom: 1px solid $green;
@@ -56,11 +62,25 @@ footer p i {
 	margin: 6px;
 }
 
+.green {
+	color: $green;
+}
+
 .logo-navbar {
 	max-height: 40px;
 	padding: 5px;
 	margin-top: 5px;
 	margin-left: 10px;
+}
+
+main {
+	padding: 20px;
+	p {
+		font-size: 18px;
+	}
+	h3 {
+		padding: 15px;
+	}
 }
 
 nav a {

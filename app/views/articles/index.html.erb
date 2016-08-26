@@ -4,6 +4,8 @@
 		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
 			<main class="col-md-8 col-sm-12">
 				<!-- blog articles will go in this section -->
+				<%= render 'layouts/articles' %>
+				<hr>
 				
 				<% @articles.each do |a| %>
 					<h2><%= a.title %></h2>

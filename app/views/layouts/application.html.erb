@@ -12,7 +12,9 @@
 <!-- TODO tracking code for google analytics -->
 	<%= render 'layouts/nav' %>
 		
-	<%= yield %>
+		<main class="<%= controller_name%>_<%= action_name %>">
+			<%= yield %>
+		</main>
 
 	<%= render 'layouts/footer' %>
 
@@ -36,7 +38,7 @@ green button success color
  -->
 
  <section id="tracking-codes">
- 	<%= render 'layouts/tracking-codes' %>
+ 	<%= render 'layouts/tracking_codes' %>
  </section>
 
 </body>
