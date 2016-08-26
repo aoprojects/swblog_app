@@ -48,6 +48,10 @@ button a {
 	color: white !important;
 }
 
+.conclusion {
+	font-size: 2em;
+}
+
 footer p {
 	color: $brown;
 }
@@ -66,6 +70,18 @@ footer p i {
 	color: $green;
 }
 
+.img-wrap-right {
+	float: right;
+	padding: 10px;
+	max-height: 200px;
+}
+
+.img-center {
+	float: center;
+	max-height: 200px;
+	margin: 0 auto;
+}
+
 .logo-navbar {
 	max-height: 40px;
 	padding: 5px;
@@ -75,6 +91,7 @@ footer p i {
 
 main {
 	padding: 20px;
+	border-bottom: 1px solid $green;
 	p {
 		font-size: 18px;
 	}

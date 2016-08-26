@@ -4,17 +4,18 @@
 		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
 			<main class="col-md-8 col-sm-12">
 				<!-- blog articles will go in this section -->
-				<%= render 'layouts/articles' %>
+				
 				<hr>
 				
 				<% @articles.each do |a| %>
 					<h2><%= a.title %></h2>
-					<p class="align-right small"><%= a.date %></p>
+					<p class="text-right small"><%= a.date %></p>
 					<section>
-						<%= a.body_text.html_safe %>
+						 
 					</section>
-					<hr>
+				
 				<% end %>
+				<%= render 'layouts/articles' %>
 
 
 			</main><!-- end blog article content area, col-md-8 -->
