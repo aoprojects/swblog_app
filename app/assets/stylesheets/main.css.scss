@@ -38,16 +38,20 @@ a:hover {
 .apply-button {
 	margin: 15px;
 }
-
+.brown {
+	color: $brown;
+}
 .btn-success {
 	background-color: $green;
 }
 
-
 button a {
 	color: white !important;
 }
-
+#careers-container h1 {
+	font-size: 18px;
+	text-align: center;
+}
 .conclusion {
 	font-size: 2em;
 }

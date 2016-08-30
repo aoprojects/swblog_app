@@ -3,12 +3,30 @@
 
 	
 	<% @jobs.each do |job| %>
+		<div class="row">
+			<div class="col-sm-2 col-xs-12">
+				<h3>Position:</h3>
+			</div>
+			<div class="col-sm-10 col-xs-12">
+				<p class="brown"><strong><%= job.title %></strong></p>
+			</div>
+		</div><!-- end .row -->
 
-		<h2>Position: <%= job.title %></h2>
 
-		<h3>Location: <%= job.location %></h3>
 
-		<span>Description: <%= job.description.html_safe %></span>
+		<div class="row">
+			<div class="col-sm-2 col-xs-12">
+				<h3>Location:</h3>
+			</div>
+			<div class="col-sm-10 col-xs-12">
+				<p><%= job.location %></p>
+			</div>
+		</div><!-- end .row -->
+		
+
+		<span><h3>Description:</h3> 
+			<%= job.description.html_safe %>
+		</span>
 
 		<span class="text-center"><button class="text-center btn btn-success apply-button">Apply TODO</button></span>
 		<hr>
