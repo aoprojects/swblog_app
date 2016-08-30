@@ -44,7 +44,11 @@ Job.create(title: "Executive Assistant", location: "Rancho Palos Verdes, Los Ang
 </p>
 
 <p>
-    There are two kinds of employees: 1) Those who finish a task and wait to be assigned another, and 2) Those who finish a task and ask, “What can I do next?”
+    There are two kinds of employees: 
+    <ol>
+    <li> Those who finish a task and wait to be assigned another </li>
+    <li> Those who finish a task and ask, “What can I do next?”</li>
+    </ol>
     If you are in Group 2, please apply.
 </p>
 

@@ -4,22 +4,20 @@
 
 	
 	<% @jobs.each do |job| %>
-		<div class="text-center">
+		<div>
 			
-				<h3 class="green">Position: <%= job.title %></h3>
+			<h3 class="green">Position: <%= job.title %></h3>
 
 		</div><!-- end .row -->
 
 
 
-		<div class="text-center larger">
+		<div class="larger">
 			<strong>Location:</strong> <%= job.location %>
 		</div><!-- end .row -->
-		
 
-		<span><h3 class="text-center">Description:</h3> 
-			<%= job.description.html_safe %>
-		</span>
+		<div class="larger"><strong>Job Description:</strong> <%= job.description.html_safe %>
+		</div>
 
 		
 		<button type="button" data-toggle="modal" data-target="#jobsModal" class="btn btn-success btn-lg"><a>Apply</a></button>
