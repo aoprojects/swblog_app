@@ -8,9 +8,9 @@
 
 		<h3>Location: <%= job.location %></h3>
 
-		<span>Description: <%= job.description %></span>
+		<span>Description: <%= job.description.html_safe %></span>
 
-		<button class="text-center btn btn-success apply-button">Apply</button>
+		<span class="text-center"><button class="text-center btn btn-success apply-button">Apply TODO</button></span>
 		<hr>
 
 	<% end %>
