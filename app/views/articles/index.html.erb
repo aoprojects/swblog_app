@@ -7,16 +7,14 @@
 		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
 			<main class="col-md-8 col-sm-12">
 				<!-- blog articles will go in this section -->
-				
-				<hr>
-				
+			
 				<% @articles.each do |a| %>
 					<div class="article-preview">
 					
 						<h2><%= a.title %></h2>
 						<p class="text-right small"><%= a.date %></p>
 						<section class="article-body-preview">
-							 <%= truncate(a.body_text.html_safe, length: 40) %>
+							 <%= truncate(a.body_text.html_safe, length: 300) %>
 						</section>
 				
 					</div>
