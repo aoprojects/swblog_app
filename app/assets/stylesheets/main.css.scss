@@ -61,8 +61,8 @@ button a {
 	color: white !important;
 }
 #careers-container h1 {
-	font-size: 18px;
 	text-align: center;
+	font-size: 18px;
 }
 .conclusion {
 	font-size: 2em;
@@ -84,6 +84,12 @@ footer p i {
 
 .green {
 	color: $green;
+}
+
+h1 {
+	font-size: 22px;
+	text-align: center;
+	color: $brown;
 }
 
 .half-width {
