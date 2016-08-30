@@ -18,6 +18,18 @@ $dropdown-link-active-color: #86765F;
 	}
 }
 
+.article-preview {
+	/*border: 1px solid black;*/
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.article-preview:hover {
+	background: lighten($brown, 50%);
+}
+
+
+
 aside section {
 	border-bottom: 1px solid $green;
 	margin: 15px;

@@ -1,5 +1,8 @@
 <div class="container <%= controller_name%>_<%= action_name %>">
 
+	<h1>Summary of articles...</h1>
+
+
 		<div class="row">
 		<!-- the whole page, other than nav and footer, is broken up into boostrap columns -->
 			<main class="col-md-8 col-sm-12">
@@ -8,13 +11,18 @@
 				<hr>
 				
 				<% @articles.each do |a| %>
-					<h2><%= a.title %></h2>
-					<p class="text-right small"><%= a.date %></p>
-					<section>
-						 
-					</section>
+					<div class="article-preview">
+					
+						<h2><%= a.title %></h2>
+						<p class="text-right small"><%= a.date %></p>
+						<section class="article-body-preview">
+							 <%= truncate(a.body_text.html_safe, length: 40) %>
+						</section>
 				
+					</div>
 				<% end %>
+				<hr>
+				<<<<<< Begin test articles section >>>>>>
 				<%= render 'layouts/articles' %>
 
 
