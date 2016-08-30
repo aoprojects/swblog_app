@@ -74,6 +74,10 @@ footer p i {
 	color: $green;
 }
 
+.half-width {
+	width: 50%;
+}
+
 .img-wrap-right {
 	float: right;
 	padding: 10px;
@@ -84,6 +88,10 @@ footer p i {
 	float: center;
 	max-height: 200px;
 	margin: 0 auto;
+}
+
+.larger {
+	font-size: 18px;
 }
 
 .logo-navbar {

@@ -1,5 +1,6 @@
 <section id="careers-container" class="container"> 
 	<h1>We are expanding! See job openings with Socialwise below.</h1>
+	<hr class="half-width">
 
 	
 	<% @jobs.each do |job| %>
@@ -11,8 +12,8 @@
 
 
 
-		<div class="text-center">
-			<h3>Location: <%= job.location %></h3>	
+		<div class="text-center larger">
+			<strong>Location:</strong> <%= job.location %>
 		</div><!-- end .row -->
 		
 
