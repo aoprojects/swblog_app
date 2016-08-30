@@ -36,6 +36,10 @@ aside section {
 	padding: 20px;
 }
 
+#aside-content-area {
+	color: $green;
+}
+
 h2, a {
 	color: $green;
 }
@@ -151,8 +155,20 @@ nav a {
 	padding: 5px;
 }
 
-.tagline {
-	
+.tagline-lg {
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	color: $brown;
+	position: relative;
+	top: 11px;
+	left: 10px;
+}
+
+.tagline-sm {
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	color: $brown;
+	position: absolute;
+	top: 20px;
+	right: 75px;
 }
 
 
