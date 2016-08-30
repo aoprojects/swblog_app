@@ -8,6 +8,7 @@ Project name: Socialwise Partners Inc. Company Blog
 
 $green: #228E50;
 $brown: #86765F;
+$gray: #BEBEBE;
 $btn-success-bg: #228E50;
 $dropdown-link-active-color: #86765F;
 
@@ -155,9 +156,12 @@ nav a {
 	padding: 5px;
 }
 
+.tagline-* {
+	color: $gray;
+}
+
 .tagline-lg {
 	font-family: Geneva, Tahoma, Verdana, sans-serif;
-	color: $brown;
 	position: relative;
 	top: 11px;
 	left: 10px;
@@ -165,10 +169,17 @@ nav a {
 
 .tagline-sm {
 	font-family: Geneva, Tahoma, Verdana, sans-serif;
-	color: $brown;
 	position: absolute;
 	top: 20px;
 	right: 75px;
+}
+
+@media only screen and (max-width: 500px) {
+	.tagline-sm {
+		position: absolute;
+		top: 65px;
+		margin: 0 auto;
+	}
 }
 
 
