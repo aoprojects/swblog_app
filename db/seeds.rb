@@ -99,4 +99,83 @@ If you are in Group 2, please submit your resume.</p>
 <p>We promise to acknowledge every inquiry with a personal response, because we have no robots currently working in HR.</p>
 ")
 
-Article.create(title: "Why a Green Business Still Prints Paper Fliers", date: "August 2016", body_text: "<p>TODO</p>")
+Article.create(title: "Why a Green Business Still Prints Paper Fliers", date: "August 2016", body_text: "<div class="articles">
+
+<h3>'Hi. We’re a green business. Here’s our large paper catalog.'</h3>
+
+<p>Ok, fine, we don’t actually start the conversation that way.  Sometimes people get it when you say you can sell over 40,000 sku's. Sometimes it's easy to be a green company. Sometimes people immediately trust new companies that offer them everything. </p> 
+
+<p>Usually not.</p>
+
+<p>Most of the time it takes a little convincing, a little demonstration of breadth.  So we offer a paper catalog, and we think it’s an important thing to do.</p>
+
+<h3>Reason #1: Understand that we can sell <i>All The Things</i></h3>
+
+<p>We sell over 40,000 items, including traditional office supplies, furniture, janitorial, etc., and our product offerings are always expanding.</p>
+
+<p>That's nice, but it only matters if the customer understand how many things that really is, and feels secure enough in that product list to order from us. </p>
+
+<p>If a customer sees the paper catalog, and hears the big thump sound it makes when it lands on a desk, then they'll get it. And they'll say something like:
+
+     <blockquote>“Oh, wow, I didn’t realize that you could sell so much. I thought you were a new company.”</blockquote></p>
+
+<p>Yeah, we are a new company. And we have a large product database. AND though it looks big, the catalog covers only a fraction of available products. <%= link_to 'Check it out.', "http://www.so-wise.com", target: "none" %></p>
+
+<h3>Reason #2: Catalogs take up physical space in your office.</h3>
+
+<p>The catalog is a big book. Its even a little annoying to carry around.  So after we give it to you, you’re going to have to do something with it.</p>
+
+<p>You can do the following things with our catalog:</p>
+<ol>
+     <li>throw it away</li>
+     <li>file it away</li>
+     <li>stare at it on your desk</li>
+     <li>sit on it</li>
+     <li>stand on it to better reach the top shelf</li>
+     <li>call attention to yourself by throwing it at the wall when life gets hard</li>
+     <li>actually look through it</li>
+</ol>
+<p>Of course we prefer the latter, but really any of them would be fine.</p>
+
+<p>Why?</p>
+
+<p>Like any company, we just want to remind you of our brand, as many times as we can, without being annoying. Maybe we can even be helpful.</p>
+
+<p>Forcing you to do something with our big huge paper catalog means that we just interacted with you again, and it was so efficient.</p>
+
+<p><i>Bonus: Maybe you'll use it as a distraction from your actual work,  and order something your office has needed for months.  You just saved the office.</i></p>
+
+<p class='text-center fun-text'>Your are now the office superhero. Congratulations! </p>
+
+<h3>Reason #3: It’s like we brought you a little gift.</h3>
+
+<p>Let's say for the sake of argument that I am your sales rep, and I visit you at your place of work for the sole purpose of giving you a present.</p>
+
+<p>This present is all yours.  It belongs to no other office.  It came into the world just to be here with you.</p>
+
+<p>Because of this visit, you got at least an hour of my time (including travel), you got a hug (if you're that kind of client) or a hand shake. You got to tell someone how you're actually doing today (because I mean it when I say "How are you").</p>
+
+<p>Basically, you feel like the special person that you are. Our database can't do that.</p>
+
+<h3>Summary: Catalogs help you buy from us. When you buy from us, you save money, and we can use your purchase to give more to charities.</h3>
+
+
+<!-- <p class='text-center'>Then the world looks like this.</p>
+
+<p><%= image_tag('sad_face.jpg', class: 'img-center img-responsive') %></p>
+
+<p class='text-center'>And nobody wants that.</p> -->
+
+<br>
+<h4>And yes, a catalog is less 'green' than no catalog. But until EVERY company is fully green and gives ALL their profit to good causes, it's more green for us to give you a catalog and get your business.</h4>
+<br>
+
+<span class='text-center green'>
+    <p>If your company would like to start being treated well, and give back to charities, and save money, and have great customer service, click here to </p>
+    <p>
+    <button class='btn btn-sm btn-success'><a href='http://www.so-wise.com'>Become a customer</a></button>
+    </p>
+    <p class='text-center'>And thank you for being So Wise! </p>
+</span>
+
+</div>")

@@ -95,6 +95,11 @@ footer p i {
 	margin: 6px;
 }
 
+.fun-text {
+	font-size: 20px;
+	font-style: italic;
+}
+
 .green {
 	color: $green;
 }
@@ -147,6 +152,10 @@ nav a {
 	color: $green;
 }
 
+ol li {
+	font-size: 18px;
+}
+
 .pages_home, .pages_story_of_sw {
 	margin-top: 30px;
 }
@@ -157,7 +166,7 @@ nav a {
 }
 
 .tagline-* {
-	color: $gray;
+	color: lighter($gray, 35%);
 }
 
 .tagline-lg {
@@ -172,6 +181,7 @@ nav a {
 	position: absolute;
 	top: 20px;
 	right: 75px;
+
 }
 
 @media only screen and (max-width: 500px) {
