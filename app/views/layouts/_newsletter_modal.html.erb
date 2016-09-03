@@ -8,13 +8,14 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Socialwise Email Newsletter</h4>
+        <h4 class="modal-title newsletter-title" id="myModalLabel"><%= image_tag('sw_leaf.png', class: 'newsletter-leaf') %>Socialwise Email Newsletter</h4>
       </div>
       <div class="modal-body">
-        TODO Agile Newsletter input buttons
+        <%= render 'layouts/newsletter_sign_up_code' %>
       </div>
       <div class="modal-footer text-center">
-        <button type="button" class="text-center btn btn-success">Sign Up</button>
+        <!-- <button type="button" class="text-center btn btn-success">Sign Up</button> -->
+        <p>Have a happy <%= Date.today.strftime("%A") %>!</p>
       </div>
     </div>
   </div>
