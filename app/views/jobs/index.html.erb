@@ -1,14 +1,16 @@
 <section id="careers-container" class="container"> 
-	<h1>We are expanding! See job openings with Socialwise below.</h1>
+	<h1>We are expanding! Browse all job openings with Socialwise below.</h1>
 	<section class="text-right" id="jobs-summary-section">
 		<p>Available positions:</p>
 			<ul>
-				<li><a href="#">Executive Assistant</a></li>
-				<li><a href="#">Sales Representative</a></li>
+				<li>Executive Assistant</li>
+				<li>Sales Representative</li>
 			</ul>
 	</section><!-- end jobs summary section -->
 	<hr class="half-width">
 
+	<!-- todo. Jobs should be pulling from database seeded files. Hard coding is a temporary fix. Erase and fix this. -->
+	<%= render 'layouts/jobs_temporary_hard_code' %>
 	
 	<% @jobs.each do |job| %>
 		<div id="job_id_#{job.id}">
@@ -17,11 +19,9 @@
 
 		</div><!-- end .row -->
 
-
-
 		<div class="larger">
 			<strong>Location:</strong> <%= job.location %>
-		</div><!-- end .row -->
+		</div>
 
 		<div class="larger"><strong>Job Description:</strong> <%= job.description.html_safe %>
 		</div>
