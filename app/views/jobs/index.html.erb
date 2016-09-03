@@ -1,10 +1,17 @@
 <section id="careers-container" class="container"> 
 	<h1>We are expanding! See job openings with Socialwise below.</h1>
+	<section class="text-right" id="jobs-summary-section">
+		<p>Available positions:</p>
+			<ul>
+				<li><a href="#">Executive Assistant</a></li>
+				<li><a href="#">Sales Representative</a></li>
+			</ul>
+	</section><!-- end jobs summary section -->
 	<hr class="half-width">
 
 	
 	<% @jobs.each do |job| %>
-		<div>
+		<div id="job_id_#{job.id}">
 			
 			<h3 class="green">Position: <%= job.title %></h3>
 
