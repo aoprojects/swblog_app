@@ -13,12 +13,12 @@
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
-<body>
+<body class="<%= controller_name%>_<%= action_name %>">
 <!-- TODO tracking code for Agile CRM -->
 <!-- TODO tracking code for google analytics -->
 	<%= render 'layouts/nav' %>
 		
-		<main class="<%= controller_name%>_<%= action_name %>">
+		<main>
 			<%= yield %>
 		</main>
 

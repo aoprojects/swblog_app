@@ -156,6 +156,23 @@ ol li {
 	font-size: 18px;
 }
 
+/*for nav styling when page is active*/
+
+.jobs_index, .jobs_show {
+	#careers_nav_link {
+		background: lighten($brown, 46%);
+	}
+}
+.articles_index, .articles_show {
+	#blog_nav_link {
+		background: lighten($brown, 46%);
+	}
+}
+
+/*end nav styling for active pages*/
+
+
+
 .pages_home, .pages_story_of_sw {
 	margin-top: 30px;
 }
