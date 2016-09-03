@@ -12,9 +12,13 @@
 	<section id="articles-summary" class="hidden-xs hidden-sm">
 		<h4>Summary of articles</h4>
 		<ul>
-			<% @articles.each do |a| %>
-				<li><%= link_to a.title, article_path(a) %></li>
-			<% end %>
+			<li>Why a Green Business Still Prints Paper Fliers</li>
+
+			<% if @articles.count > 1 %>
+				<% @articles.each do |a| %>
+					<li><%= link_to a.title, article_path(a) %></li>
+				<% end %>
+			<% end %><!-- end if articles.count > 1 -->
 		</ul>
 		<small>More to come. Stay tuned...</small>
 
@@ -30,7 +34,7 @@
 		<br>
 		<div class="text-center colnclusion">
 			<button type="button" data-toggle="modal" data-target="#newsletterModal" class="btn btn-success btn-sm"><a class="text-center">Join our Newsletter</a></button>
-			<%= render 'layouts/newsletter_modal' %>
+			
 		</div>
 	</section>
 <!-- 	<section id="why-is-socialwise-different">TODO
