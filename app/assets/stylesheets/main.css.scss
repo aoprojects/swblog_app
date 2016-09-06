@@ -12,6 +12,7 @@ $gray: #BEBEBE;
 $btn-success-bg: #228E50;
 $dropdown-link-active-color: #86765F;
 
+
 .articles_index {
 	h3 {
 		text-align: center;
@@ -155,6 +156,10 @@ main {
 
 nav a {
 	color: $green;
+}
+
+.navbar-toggle {
+	border: none;
 }
 
 .newsletter-leaf {
