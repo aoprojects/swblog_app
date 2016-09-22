@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "jobs#index"
+  root "articles#index"
   resources :articles
   resources :jobs
   get "story_of_sw" => "pages#story_of_sw"

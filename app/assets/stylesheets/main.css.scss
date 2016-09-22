@@ -7,10 +7,13 @@ Project name: Socialwise Partners Inc. Company Blog
 
 
 $green: #228E50;
+$transparent-green: rgba(244,249,246,0.9);
 $brown: #86765F;
 $gray: #BEBEBE;
+$transparent-white: rgba(255,255,255,0.9);
 $btn-success-bg: #228E50;
 $dropdown-link-active-color: #86765F;
+$brown-background: lighten($brown, 50%);
 
 
 .articles_index {
@@ -20,16 +23,23 @@ $dropdown-link-active-color: #86765F;
 	}
 }
 
+.article-body-preview {
+
+}/*shows if there are more than 1 articles*/
+
 .article-preview {
 	/*border: 1px solid black;*/
 	padding: 20px;
 	border-radius: 3px;
-}
+}/*shows if there are more than 1 articles*/
 
 .article-preview:hover {
 	background: lighten($brown, 50%);
 }
 
+.article-show {
+
+} /*shows if there is only one article*/
 
 
 aside section {
@@ -40,6 +50,8 @@ aside section {
 
 #aside-content-area {
 	color: $green;
+	position: fixed;
+
 }
 
 h2, a {
@@ -80,6 +92,11 @@ button a {
 }
 .conclusion {
 	font-size: 2em;
+}
+
+footer {
+	background: lighten($brown, 50%);
+	padding: 40px 30px 30px 30px;
 }
 
 footer p {
@@ -137,6 +154,10 @@ h1 {
 	padding-bottom: 20px;
 }
 
+.larger-big {
+	font-size: 26px;
+}
+
 .logo-navbar {
 	max-height: 40px;
 	padding: 5px;
@@ -145,7 +166,7 @@ h1 {
 }
 
 main {
-	padding: 20px;
+	padding: 30px;
 	p {
 		font-size: 18px;
 	}
@@ -158,8 +179,21 @@ nav a {
 	color: $green;
 }
 
-.navbar-toggle {
+.navbar {
+	background: $brown-background;
+}
+
+.navbar-toggle{
 	border: none;
+	background: none;
+}/* this is to change bootstrap settings */
+
+.navbar-toggle:active {
+	background: none !important;
+}
+
+.navbar-toggle:hover {
+	background: none !important;
 }
 
 .newsletter-leaf {
@@ -212,19 +246,27 @@ ol li {
 	padding: 5px;
 }
 
-.tagline-* {
-	color: lighter($gray, 35%);
+.shift-down {
+	position: relative;
+	top: 5px;
+}
+
+.smaller {
+	font-size: 12px;
+}
+
+.tagline-lg, .tagline-sm {
+	font-family: Arial;
+	color: lighten(gray, 15%);
 }
 
 .tagline-lg {
-	font-family: Geneva, Tahoma, Verdana, sans-serif;
 	position: relative;
 	top: 11px;
 	left: 10px;
 }
 
 .tagline-sm {
-	font-family: Geneva, Tahoma, Verdana, sans-serif;
 	position: absolute;
 	top: 20px;
 	right: 75px;
@@ -232,11 +274,6 @@ ol li {
 }
 
 @media only screen and (max-width: 500px) {
-	.tagline-sm {
-		position: absolute;
-		top: 65px;
-		margin: 0 auto;
-	}
 	.jobs_index {
 		.tagline-sm {
 			display: none;
