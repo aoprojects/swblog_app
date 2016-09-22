@@ -7,7 +7,7 @@
 				<!-- below is temporary hard coding of blog article -->
 				<div class="article-show">
 					<h2>Why A Green Business Still Prints Paper Catalogs</h2>
-					<p class="text-right small">August 2016</p>
+					<p class="text-right small article-date">August 2016</p>
 					<%= render "pages/text_for_article_1" %>
 				</div>
 
@@ -17,7 +17,7 @@
 					<% if @articles.count >= 2 %>
 						<div class="article-preview">
 							<h2><%= a.title %></h2>
-							<p class="text-right small"><%= a.date %></p>
+							<p class="article-date text-right small"><%= a.date %></p>
 								<section class="article-body-preview">
 									 <%= truncate(a.body_text.html_safe, length: 300) %>
 								</section>
